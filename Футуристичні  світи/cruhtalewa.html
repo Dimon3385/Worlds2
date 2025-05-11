@@ -1,0 +1,121 @@
+<!<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кришталева Пустка</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      animation: backgroundAnimation 20s infinite alternate;
+      overflow-x: hidden;
+    }
+
+    @keyframes backgroundAnimation {
+      0% {
+        background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      }
+      100% {
+        background: radial-gradient(ellipse at top, #0f2027 0%, #203a43 50%, #2c5364 100%);
+      }
+    }
+
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: transparent url('https://raw.githubusercontent.com/JulianLaval/canvas-space-background/master/images/stars.png') repeat;
+      z-index: 0;
+      animation: moveStars 60s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 10000px; }
+    }
+
+    .centered-content {
+      text-align: center;
+      z-index: 1;
+      position: relative;
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .centered-content h1 {
+      font-size: 3em;
+      margin: 0 0 20px;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .centered-content p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .centered-content img {
+      display: block;
+      margin: 30px auto;
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.2);
+    }
+
+    .button {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #00bcd4;
+      background-color: transparent;
+      border: 2px solid #00bcd4;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      box-shadow: 0 0 15px #00bcd4, 0 0 25px #00bcd4, 0 0 35px #00bcd4;
+      color: #000;
+      background-color: #00bcd4;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="centered-content">
+    <h1>Кришталева Пустка</h1>
+    <p>Безкрайні льодові рівнини з кристалами, що зберігають спогади загублених цивілізацій.</p>
+    <p>
+      У безмежному просторі, де час завмер, розкинулася Кришталева Пустка — світ, де лід і кристали сплітаються в химерні візерунки.
+      Тут панує вічна зима, а повітря наповнене шепотом вітру, що проноситься крізь кришталеві шпилі.
+      Кожен кристал зберігає спогади про давні цивілізації, їхні мрії та трагедії.
+      Під світлом двох місяців, що відбивається у крижаних поверхнях, Пустка виглядає як зачароване царство, де кожен крок відкриває нові таємниці.
+    </p>
+    <p>
+      У цьому світі живуть створіння, що ідеально пристосовані до жорстоких умов. Світанкові Стражі, із прозорими крилами, можуть маніпулювати світлом і створювати ілюзії. Кристалідни — напівпрозорі істоти, що володіють здатністю зберігати та передавати енергію через свої кристалічні тіла.
+    </p>
+    <p>
+      Клімат тут дуже нестабільний: інколи виникають теплові спалахи, що розтоплюють поверхню, створюючи нові структури. А рідкі потоки з кристалів, що виглядають як рідкий скло, мають магічні властивості — здатні як лікувати, так і завдавати шкоди.
+    </p>
+    <button class="button" onclick="history.back()">Назад</button>
+    <img src="crys.jpg" alt="Кришталеві пейзажі">
+  </div>
+</body>
+</html>
+

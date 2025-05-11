@@ -1,0 +1,128 @@
+
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Футуристичні Світи</title>
+  <style>
+  
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+      overflow-x: hidden;
+      background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      animation: backgroundAnimation 20s infinite alternate;
+    }
+
+    @keyframes backgroundAnimation {
+      0% {
+        background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+      }
+      100% {
+        background: radial-gradient(ellipse at top, #0f2027 0%, #203a43 50%, #2c5364 100%);
+      }
+    }
+
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      background: transparent url('https://raw.githubusercontent.com/JulianLaval/canvas-space-background/master/images/stars.png') repeat;
+      z-index: 0;
+      animation: moveStars 60s linear infinite;
+    }
+
+    @keyframes moveStars {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 10000px; }
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 50px;
+      z-index: 1;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .worlds {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      padding: 40px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 15px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,255,255,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 40px rgba(0,255,255,0.4);
+    }
+
+    .card h2 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.9em;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 0.8em;
+      color: #666;
+      z-index: 1;
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <header>
+    <h1>Футуристичні Світи</h1>
+  </header>
+  
+  <section class="worlds">
+  <a href="cruhtalewa.html" class="card">
+    <h2>Кришталева Пустка</h2>
+    <p>Безкрайні льодові рівнини з кристалами, що зберігають спогади загублених цивілізацій.</p>
+  </a>
+  <a href="smaragdovii.html" class="card">
+    <h2>Смарагдовий Край</h2>
+    <p>Біоорганічний світ, де природа й технології об'єднані в одне ціле.</p>
+  </a>
+   
+
+</button>
+
+</button>
+
+</section>
+
+	
+	 
+  </section>
+

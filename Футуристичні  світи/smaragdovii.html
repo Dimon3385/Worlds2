@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Смарагдовий Край</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at center, #39FF14 0%, #001a00 100%);
+      animation: glow 4s ease-in-out infinite alternate;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Orbitron', sans-serif;
+      color: #fff;
+    }
+
+    @keyframes glow {
+      0% {
+        background: radial-gradient(circle at center, #39FF14 0%, #001a00 100%);
+      }
+      100% {
+        background: radial-gradient(circle at center, #0FFF50 0%, #003300 100%);
+      }
+    }
+
+    .centered-content {
+      max-width: 900px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .centered-content h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .centered-content p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .centered-content img {
+      margin-top: 30px;
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,255,255,0.2);
+    }
+
+    .back-button {
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #00bcd4;
+      background-color: transparent;
+      border: 2px solid #00bcd4;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+      transition: all 0.3s ease;
+    }
+
+    .back-button:hover {
+      box-shadow: 0 0 15px #00bcd4, 0 0 25px #00bcd4, 0 0 35px #00bcd4;
+      color: #000;
+      background-color: #00bcd4;
+    }
+  </style>
+</head>
+<body>
+  <div class="centered-content">
+    <h1>Смарагдовий Край</h1>
+    <p>Біоорганічний світ, де природа й технології об'єднані в одне ціле.</p>
+    <p>
+      У цьому світі природа і технології злились в єдине дихання.
+      Дерева сяють біолюмінесцентним світлом, а коріння рослин спілкується через підземні мережі даних.
+      Тут небо має смарагдовий відтінок, а кожна істота — частина розумної екосистеми.
+      Вітер переносить аромати квітів із кристалічними пелюстками, а птахи мають синтетичні крила, що живляться енергією сонця.
+      Смарагдовий Край — це гармонія, якої не досяг жоден інший світ: симбіоз живого і штучного, минулого й майбутнього.
+    </p>
+    <p>
+      Мешканцями Смарагдового Краю є біосинтетичні істоти — гармонійне поєднання органіки й нанотехнологій. 
+      Серед них — флуоресцентні фауни, інтелектуальні рослини, а також розумні істоти, схожі на людей, але з можливістю 
+      взаємодії з навколишнім середовищем через нейронні мережі, що переплетені з природою. Вони спілкуються не словами, 
+      а емоційними імпульсами та біолюмінесцентними сигналами.
+    </p>
+    <p>
+      Клімат тут — стабільно м’який і вологий, завжди сприятливий для життя. Атмосфера збагачена киснем і біоактивними 
+      частинками, які підтримують здоров’я та енергію кожної живої істоти. Нічне небо всіяне не лише зірками, 
+      а й плаваючими світловими формами — плазмоїдами, які реагують на думки мешканців і змінюють колір залежно від їхніх емоцій.
+    </p>
+    <button onclick="history.back()" style="
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00bcd4;
+  background-color: transparent;
+  border: 2px solid #00bcd4;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4;
+  transition: all 0.3s ease;
+" onmouseover="this.style.boxShadow='0 0 15px #00bcd4, 0 0 25px #00bcd4, 0 0 35px #00bcd4'; this.style.color='#000'; this.style.backgroundColor='#00bcd4';" onmouseout="this.style.boxShadow='0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4'; this.style.color='#fff'; this.style.backgroundColor='transparent';">
+  Назад
+</button>
+    <img src="R.jpg" alt="Смарагдовий пейзаж">
+  </div>
+</body>
+</html>
